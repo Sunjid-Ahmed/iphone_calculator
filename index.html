@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main id="main">
+        <form id="calc_form">
+            <header class="calc_header">
+                <input type="text" disabled id="output" class="calc_output" value="0">
+            </header>
+            <footer class="calc_footer">
+                <div class="btn_group">
+                    
+                    <button data-type="clear" type="reset" value="clear" class="btn btn-grey">AC</button>
+
+                    <button type="button" data-type="operator" value="invert" class="btn btn-grey">+/-</button>
+
+                    <button type="button" data-type="operator" value="%" class="btn btn-grey">%</button>
+
+                    <button type="button" data-type="operator" value="/" class="btn btn_orange">÷</button>
+                </div>
+
+                <div class="btn_group">
+                    <button type="button" data-type="operand" value="7" class="btn btn-dark-grey" id="7">7</button>
+
+                    <button type="button" data-type="operand" value="8" class="btn btn-dark-grey" id="8">8</button>
+
+                    <button type="button" data-type="operand" value="9" class="btn btn-dark-grey" id="9">9</button>
+
+                    <button type="button" data-type="operator" value="*" class="btn btn-orange">X</button>
+                </div>
+
+                <div class="btn_group">
+                    <button type="button" data-type="operand" value="4" class="btn btn-dark-grey" id="4">4</button>
+
+                    <button type="button" data-type="operand" value="5" class="btn btn-dark-grey" id="5">5</button>
+
+                    <button type="button" data-type="operand" value="6" class="btn btn-dark-grey" id="6">6</button>
+
+                    <button type="button" data-type="operator" value="-" class="btn btn-orange">-</button>
+                </div>
+
+                <div class="btn_group">
+                    <button type="button" data-type="operand" value="1" class="btn btn-dark-grey" id="1">1</button>
+
+                    <button type="button" data-type="operand" value="2" class="btn btn-dark-grey" id="2">2</button>
+
+                    <button type="button" data-type="operand" value="3" class="btn btn-dark-grey" id="3">3</button>
+
+                    <button type="button" data-type="operator" value="+" class="btn btn-orange">+</button>
+                </div>
+
+                <div class="btn_group">
+                    <button type="button" data-type="operand" value="0" class="btn btn-grow btn-dark-grey">0</button>
+
+                    <button type="button" data-type="operand" value="." class="btn btn-dark-grey">.</button>
+
+                    <button type="button" data-type="operator" value="=" class="btn btn-orange">=</button>
+                </div>
+
+
+            </footer>
+        </form>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
